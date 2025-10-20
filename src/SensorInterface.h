@@ -4,6 +4,8 @@
 #include <Arduino.h>
 
 class SensorInterface {
+private:
+    // TODO: declare pins here
 public:
     virtual void setup() = 0;               // Called during system setup
     virtual void update() = 0;              // Called periodically to refresh data
