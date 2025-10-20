@@ -7,6 +7,7 @@
 class CommsOutInterface {
 public:
     virtual void send(const String& sensorName, float value) = 0;
+    virtual void drainQueue() = 0;
     virtual ~CommsOutInterface() = default;
 };
 
